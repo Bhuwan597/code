@@ -1,33 +1,26 @@
-var searchBtn = document.querySelector('.searchBtn');
-var closeBtn = document.querySelector('.closeBtn');
+let closeBtn = document.querySelector(".close-btn")
+let menu = document.querySelector(".menu")
 
-let header = document.querySelector('header');
-let navigation = document.querySelector('.navigation');
-let menuToggle = document.querySelector('.menuToggle');
+let navigations = document.querySelector('.navigations')
 
-let searchBox = document.querySelector(".searchBox");
+let searchForm = document.querySelector(".search-form")
+let searchBtn = document.querySelector(".search-btn")
+let closeSearchBtn = document.querySelector(".close-search-btn")
 
-searchBtn.addEventListener('click',function(){
-    searchBtn.classList.add('hide')
-    searchBox.classList.add('active');
-    closeBtn.classList.add('active')
-    searchBtn.classList.add('active')
-    menuToggle.classList.add('hide')
-    header.classList.add('open');
-})
 
-closeBtn.addEventListener('click', function(){
-    searchBtn.classList.remove('hide')
-    searchBox.classList.remove('active');
-    menuToggle.classList.remove('hide')
-    closeBtn.classList.remove('active')
-    searchBtn.classList.remove('active')
-    header.classList.remove('open');
-})
 
-menuToggle.addEventListener('click',function() {
-    header.classList.toggle('open');
-    searchBox.classList.remove('active')
-    closeBtn.classList.remove('active')
-    searchBtn.classList.remove('remove')
-})
+
+menu.onclick = function(){
+    navigations.classList.add('active')
+    menu.classList.add('hide')
+}
+closeBtn.onclick = function(){
+    navigations.classList.remove('active')
+    menu.classList.remove('hide')
+}
+searchBtn.onclick = function(){
+    searchForm.classList.add('active')
+}
+closeSearchBtn.onclick = function(){
+    searchForm.classList.remove('active')
+}
