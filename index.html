@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Navbar</title>
+    <link rel="stylesheet" href="./navbar.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="search">
+                <span class="icon">
+                    <i class='bx bx-search-alt-2 searchBtn'></i>
+                    <i class='bx bx-x closeBtn'></i>
+                </span>
+            </div>
+            <i class='bx bx-menu menuToggle'></i>
+        </div>
+        <!-- <div class="searchBox"> -->
+            <form action="/" class="searchBox">
+                <input type="search" name="search" id="search" placeholder="Search Here . . . .">
+                <button class="searchFormBtn" type="submit"><i class='bx bx-search-alt-2'></i></button>
+            </form>
+        <!-- </div> -->
+    </header>
+    <script src="./navbar.js"></script>
+</body>
+</html>
