@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+section.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    margin: 3% auto;
+    display: flex;
+    height: 623px;
+    box-shadow: 0 12px 18px rgba(54,176,138,0.005);
+    border-radius: 6px;
+    background: #fff;
+}
+.contact-form-container{
+    width: 70%;
+    padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.big-heading{
+    font-weight: 900;
+    font-size: 2rem;
+    color: #0e10af;
+}
+.text-fields{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 2%;
+    margin: 0 2%;
+    width: 46%;
+    border-radius: 4px;
+    color: #84848d;
+}
+input,textarea{
+    border: none;
+    outline: none;
+    background: inherit;
+    color: #84848d;
+    width: 200%;
+    margin-left: 4%;
+    font-size: 1rem;
+}
+.contact-form-contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+.contact-form-contents .text-fields{
+    margin: 3% 2%;
+    width: 70%;
+    padding: 3%;
+}
+.send-msg-btn{
+    padding: 10px 20px;
+    background-color: #0e10af;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 10px;
+    max-width: 50%;
+    cursor: pointer;
+}
+.send-msg-btn:hover{
+    background-color: #181bca;
+}
+@media only screen and (max-width: 1067px) {
+.text-fields{
+    margin: 10px 0;
+    width: 100%;
+}
+}
+.contact-form-contents .text-fields{
+    width: 100%;
+    margin: 10px 0;
+}
+@media only screen and (max-width: 590px) {
+    .container{
+        flex-direction: column-reverse;
+        height: fit-content;
+        text-align: center;
+    }
+    .side-big-heading{
+        margin: 10% 0 5%;
+    }
+    .contact-form-container{
+        width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 1200px){
+    .container{
+        min-height: 100vh;
+    }
+}

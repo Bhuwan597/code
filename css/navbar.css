@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 header{
     position: sticky;
 }
@@ -30,6 +33,7 @@ ul.navigations{
     list-style: none;
     display: flex;
     justify-content: flex-end;
+    z-index: 1000;
 }
 
 ul.navigations li a{
@@ -86,9 +90,12 @@ ul.navigations li a:hover::before{
 .login-btn:hover{
     background-color: #5a42e2;
 }
-@media(max-width:860px){
+@media(max-width:1130px){
     .close-btn,.menu{
         display: inline-block;
+    }
+    .close-btn{
+        color: #fff;
     }
     .logo{
         text-align: center;
@@ -113,10 +120,13 @@ ul.navigations li a:hover::before{
     padding: 60px;
     border-top: 1px solid #4346f0;
     transition: .2s ease-in-out;
-    background: rgba(185, 180, 180, 0.9);
+    background: #4024df;
 }
 ul.navigations li{
     margin: 20px 0;
+}
+ul.navigations li a{
+    color: #fff;
 }
 .navigations.active{
     opacity: 1;
