@@ -72,6 +72,8 @@ input,textarea{
     border-radius: 10px;
     max-width: 50%;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 .send-msg-btn:hover{
     background-color: #181bca;
@@ -81,11 +83,15 @@ input,textarea{
     margin: 10px 0;
     width: 100%;
 }
+.contact-form-contents {
+    width: 80%;
+}
 }
 .contact-form-contents .text-fields{
     width: 100%;
     margin: 10px 0;
 }
+
 @media only screen and (max-width: 590px) {
     .container{
         flex-direction: column-reverse;
@@ -98,10 +104,17 @@ input,textarea{
     .contact-form-container{
         width: 100%;
     }
+    .contact-form-contents {
+        width: 80%;
   }
+}
 
   @media only screen and (min-width: 1200px){
     .container{
         min-height: 100vh;
     }
+    .contact-form-contents {
+        width: 80%;
+  }
+    
 }
