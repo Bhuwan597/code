@@ -132,6 +132,10 @@ section.rashifal .row h1{
     section.rashifal .row h2{
         font-size: 3em;
     }
+    section.rashifal-navbar .rashifal-menu a{
+        margin: 0 5px;
+        font-size: 1.1em;
+    }
 }
 @media screen and (min-width: 992px) {
     section.rashifal{
